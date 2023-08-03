@@ -1,5 +1,10 @@
 {
   "name": "scholarlink",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "axios": "^1.4.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.1"
+  }
 }

@@ -1,0 +1,107 @@
+
+#signup{
+    height: 80%;
+    width: 400px;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:azure ;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(144, 144, 214);
+}
+
+#signupside{
+    min-height: 80%;
+    width: 400px;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(59, 59, 215) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(59, 59, 215);
+}
+
+#signupside label{
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    font-family: sans-serif;
+}
+
+input{
+    height: 45px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:hover{
+    transition: 0.4s;
+    width: 85%;
+    border: 2px solid rgb(59, 59, 215);
+}
+
+form{
+    display: block;
+    align-items: center;
+}
+
+#signup h1{
+    color: black;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.gender{
+    display: flexbox;
+}
+
+.gender input{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    margin-right: 5px;
+}
+
+.contact{
+    display: flexbox;
+}
+
+.contact #code{
+    width: 10%;
+    margin-right: 10px;
+    display: inline;
+}
+
+.contact #phone{
+    width: 65%;
+    display: inline;
+}
+
+#signupBtn{
+    width: 75%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(138, 138, 255);
+    color: white;
+    font-size: 20px;
+}
+
+#signupBtn:hover{
+    width: 80%;
+    background-color: rgb(59, 59, 215);
+}
+
+
