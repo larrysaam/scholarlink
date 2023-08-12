@@ -132,3 +132,25 @@ hr{
     float: left;
     margin-left: 10px;
 }
+
+#mail
+{
+    background-color: rgb(79, 79, 246);
+    width: 85%;
+    height: 45px;
+    border-radius: 7px;
+    color: white;
+    font-family:  sans-serif;
+    transition: 0.4s;
+   font-size: 18px;
+    border: 2px solid rgb(59, 59, 215);
+}
+
+.title
+{
+display: block; 
+font-size: 30px;
+}
+.text-danger{
+    color: red;
+}
