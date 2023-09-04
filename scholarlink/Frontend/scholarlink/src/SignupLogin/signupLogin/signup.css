@@ -1,12 +1,4 @@
 
-
-
-#logincontainer{
-    display: flex;
-    margin: auto;
-}
-
-
 #signup{
     height: 80%;
     width: 400px;
@@ -15,7 +7,7 @@
     padding-bottom: 40px;
     background-color:azure ;
     text-align: center;
-    margin-left: 30px;
+    margin: auto;
     border: 2px solid rgb(144, 144, 214);
 }
 

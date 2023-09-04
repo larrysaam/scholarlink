@@ -3,7 +3,7 @@ import './signup.css'
 import axios from 'axios';
 import Side from "./Signupside";
 import {Link} from 'react-router-dom';
-
+import { useHistory } from "react-router-dom";
 
 
 
@@ -15,7 +15,10 @@ const Signup = () =>{
     const [password, setpassword] = useState('')
     const [confirm, setconfirm] = useState('')
 
+    const history = useHistory();
+    
 
+    //function contains API that signs up user
     function handlesubmite(event){
         event.preventDefault();
         axios.post('http://localhost:8081/signup', {username, email, code, phone, password})
@@ -23,6 +26,7 @@ const Signup = () =>{
             if(res.data === "inserted"){
                 //go to home page
                 alert("login sucessfull");
+                history.push("home");
             }else if(res.data === "already exist"){
                 alert("account already exist");
             }
@@ -32,7 +36,8 @@ const Signup = () =>{
     
 
     return(
-        <><Side />
+        <div id='logincontainer'>
+        <Side />
         <section id='signup'>
             <h1>Registration</h1>
             <form onSubmit={handlesubmite}>
@@ -52,7 +57,8 @@ const Signup = () =>{
                 <input type='submit' name='Sign Up' value='Signup' id='signupBtn' />
                 <p>Already have an account? <Link to='/'>Login</Link></p>
             </form>
-        </section></>
+        </section>
+        </div>
     );
 };
 

@@ -82,6 +82,39 @@ app.post('/login', (req, res) => {
 })
 
 
+
+app.post('/jobs', (req, res) => {
+    const sql = "SELECT * FROM jobs ";
+ 
+    db.query(sql, (err, data) => {
+       if(err){
+        return res.json("Error");
+       } 
+       if(data.length > 0){
+        return res.json(data);
+       } else {
+        return res.json("Failed");
+
+       }
+    })
+})
+
+
+
+app.post('/saveresume', (req, res) => {
+    
+    const sql = "INSERT INTO users(resume) VALUES(?)";
+    db.query(sql, [req.body.file], (err, data) =>{
+        if(err){
+            return res.json("error");
+        }else{
+            return res.json("saved");
+        }
+    })
+})
+
+
+
 app.listen(8081, ()=>{
     console.log("listerning")
 })

@@ -16,9 +16,10 @@ else{
 if(values.password ===""){
   error.password ="password should not be empty"
 }
-else if(!password_pattern.test(values.password)){
-error.password ="password didn't match"
-}else{
+// else if(!password_pattern.test(values.password)){
+// error.password ="password didn't match"
+// }
+else{
   error.password =""
 }
 return error;

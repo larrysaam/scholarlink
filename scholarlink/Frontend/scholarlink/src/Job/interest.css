@@ -1,0 +1,102 @@
+#interestsection{
+    min-height: 100%;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#dropdown{
+    height: 20%;
+    width: 50%;
+    margin-left: 100px;
+    display: flex;
+}
+
+#options{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+#dropdown div{
+    width: 140px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    padding: 0px;
+}
+
+#dropdown div button{
+    font-size: 16px;
+    font-family: sans-serif;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+/* pdf div */
+
+#pdfinput{
+    width: 50%;
+    min-height: 400px;
+    margin-left: 100px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+
+#pdfinput h2{
+    font-family: sans-serif;
+}
+
+#pdfinput input{
+    width: 400px;
+    height: 200px;
+    margin-left: 0px;
+    background-image: url("./pdf.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px;
+}
+
+#pdfinput .buttonsbox{
+    display: flex;
+    float: left;
+}
+
+.buttonsbox button{
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+.buttonsbox #savebtn{
+    background-color: rgba(0, 0, 255, 0.58);
+    margin-right: 20px;
+}
+
+.buttonsbox #savebtn:hover{
+    background-color: rgba(0, 0, 255);
+}
+
+
+.buttonsbox #deletebtn{
+    background-color: rgba(255, 0, 0, 0.58);
+}
+
+.buttonsbox #deletebtn:hover{
+    background-color: rgba(255, 0, 0);
+}
+

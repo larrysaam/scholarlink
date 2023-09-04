@@ -22,6 +22,8 @@ const Login = () => {
     const handleInput2 = (even)=>{
         setValues(prev =>  ({...prev, password: [even.target.value]}))
     }
+
+
    
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -31,7 +33,7 @@ const Login = () => {
             .then(res=> {
                 if(res.data === "Success" ){
                     history.push("home");
-                    alert("loged in");
+                    alert("Login Successful ");
                 }else if(res.data === "Failed"){
                     console.log(values)
                     alert("No record existed");
@@ -44,7 +46,8 @@ const Login = () => {
       }
 
     return (
-        <><Side />
+        <div id='logincontainer'>
+        <Side />
         <section id='login'>
             <div className='title'><h1><strong><center>Login</center></strong></h1></div>
             <form onSubmit={handleSubmit}>
@@ -60,7 +63,8 @@ const Login = () => {
                 <button type='submit' name='facebook' id='facebookbtn'><img src={facebookimg} /> Login with Facebook</button>
                 <button type='submit' name='google' id='googlebtn'><img src={googleimg} /> Login with Google</button>
             </form>
-        </section></>
+        </section>
+        </div>
     );
 };
 export default Login; 
